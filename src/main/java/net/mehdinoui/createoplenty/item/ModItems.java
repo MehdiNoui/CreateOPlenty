@@ -21,7 +21,7 @@ public class ModItems {
             () -> new SandPaperItem(new Item.Properties())
     );
     public static final RegistryObject<Item> WHITE_SAND_PAPER = ITEMS.register(
-            "white_sand_paper",
+            "orange_sand_paper",
             () -> new SandPaperItem(new Item.Properties())
     );
 
