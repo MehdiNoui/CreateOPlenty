@@ -22,11 +22,11 @@ public class CreateOPlenty
     public CreateOPlenty() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
+
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
