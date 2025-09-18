@@ -2,6 +2,7 @@ package net.mehdinoui.createoplenty.creativeTab;
 
 import net.mehdinoui.createoplenty.CreateOPlenty;
 
+import net.mehdinoui.createoplenty.item.ModItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,7 +20,9 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(Items.IRON_AXE))
                     .title(Component.translatable("creativetab.createoplenty_tab"))
                     .displayItems((pParameters, pOutput) ->{
-                                pOutput.accept(Items.IRON_AXE);
+                                pOutput.accept(ModItems.BLACK_SAND_PAPER.get());
+                                pOutput.accept(ModItems.ORANGE_SAND_PAPER.get());
+                                pOutput.accept(ModItems.WHITE_SAND_PAPER.get());
                     }
                     ).build());
 

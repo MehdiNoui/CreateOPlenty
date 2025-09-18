@@ -17,7 +17,9 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-
+        simpleItem(ModItems.BLACK_SAND_PAPER);
+        simpleItem(ModItems.ORANGE_SAND_PAPER);
+        simpleItem(ModItems.WHITE_SAND_PAPER);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
