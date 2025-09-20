@@ -1,10 +1,9 @@
 package net.mehdinoui.createoplenty.creativeTab;
 
-import biomesoplenty.init.ModConfig;
 import net.mehdinoui.createoplenty.Configuration;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 
-import net.mehdinoui.createoplenty.item.ModItems;
+import net.mehdinoui.createoplenty.item.COPItems;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -14,7 +13,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
-public class ModCreativeModeTabs {
+public class COPCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateOPlenty.MOD_ID);
 
@@ -23,9 +22,9 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.createoplenty_tab"))
                     .displayItems((pParameters, pOutput) ->{
                         if(Configuration.ENABLE_SANDPAPERS.get()){
-                            pOutput.accept(ModItems.BLACK_SAND_PAPER.get());
-                            pOutput.accept(ModItems.ORANGE_SAND_PAPER.get());
-                            pOutput.accept(ModItems.WHITE_SAND_PAPER.get());
+                            pOutput.accept(COPItems.BLACK_SAND_PAPER.get());
+                            pOutput.accept(COPItems.ORANGE_SAND_PAPER.get());
+                            pOutput.accept(COPItems.WHITE_SAND_PAPER.get());
                         }
                     }
                     ).build());
