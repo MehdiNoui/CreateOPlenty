@@ -1,9 +1,9 @@
 package net.mehdinoui.createoplenty;
 
 import com.mojang.logging.LogUtils;
-import net.mehdinoui.createoplenty.block.ModBlocks;
-import net.mehdinoui.createoplenty.creativeTab.ModCreativeModeTabs;
-import net.mehdinoui.createoplenty.item.ModItems;
+import net.mehdinoui.createoplenty.block.COPBlocks;
+import net.mehdinoui.createoplenty.creativeTab.COPCreativeTab;
+import net.mehdinoui.createoplenty.item.COPItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -24,9 +24,9 @@ public class CreateOPlenty
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
 
-        ModCreativeModeTabs.register(modEventBus);
-        ModItems.register(modEventBus);
-        ModBlocks.register(modEventBus);
+        COPCreativeTab.register(modEventBus);
+        COPItems.register(modEventBus);
+        COPBlocks.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
     }
 }
