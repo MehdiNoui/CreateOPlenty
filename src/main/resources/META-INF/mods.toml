@@ -38,14 +38,14 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="biomesoplenty"
 mandatory=true
-versionRange="[18.0.0.592,)"
+versionRange="[19.0.0.96,)"
 ordering="NONE"
 side="BOTH"
 
 # Glitchcore BOP dependency
 [[dependencies.${mod_id}]]
 modId="glitchcore"
-mandatory=true
+mandatory=false
 versionRange="[0.0.1.1,)"
 ordering="NONE"
 side="BOTH"
@@ -53,7 +53,7 @@ side="BOTH"
 # Terrablender BOP dependency
 [[dependencies.${mod_id}]]
 modId="terrablender"
-mandatory=true
+mandatory=false
 versionRange="[3.0.1.10,)"
 ordering="NONE"
 side="BOTH"
