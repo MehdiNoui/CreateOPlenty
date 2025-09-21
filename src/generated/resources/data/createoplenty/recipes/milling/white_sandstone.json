@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:white_sandstone"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "biomesoplenty:white_sand"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:mixing",
+  "heatRequirement": "heated",
+  "ingredients": [
+    {
+      "item": "minecraft:calcite"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "biomesoplenty:thermal_calcite"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:porous_flesh"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 4,
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "chance": 0.25,
+      "item": "minecraft:bone_meal"
+    }
+  ]
+}
