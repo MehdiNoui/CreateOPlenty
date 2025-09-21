@@ -88,7 +88,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     implementation fg.deobf("curse.maven:create-328085:6247663")
-    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:4617259")
+    implementation fg.deobf("curse.maven:biomes-o-plenty-220318:6364065")
     implementation fg.deobf("curse.maven:terrablender-563928:6290448")
     implementation fg.deobf("curse.maven:glitchcore-955399:5787839")
 
