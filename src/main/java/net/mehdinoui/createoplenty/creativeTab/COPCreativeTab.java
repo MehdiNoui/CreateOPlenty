@@ -21,11 +21,9 @@ public class COPCreativeTab {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(Items.IRON_AXE))
                     .title(Component.translatable("creativetab.createoplenty_tab"))
                     .displayItems((pParameters, pOutput) ->{
-                        if(Configuration.ENABLE_SANDPAPERS.get()){
                             pOutput.accept(COPItems.BLACK_SAND_PAPER.get());
                             pOutput.accept(COPItems.ORANGE_SAND_PAPER.get());
                             pOutput.accept(COPItems.WHITE_SAND_PAPER.get());
-                        }
                     }
                     ).build());
 
