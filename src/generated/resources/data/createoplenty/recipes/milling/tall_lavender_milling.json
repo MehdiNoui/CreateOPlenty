@@ -1,0 +1,25 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:tall_lavender"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 3,
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "item": "minecraft:purple_dye"
+    },
+    {
+      "chance": 0.05,
+      "count": 2,
+      "item": "minecraft:green_dye"
+    }
+  ]
+}

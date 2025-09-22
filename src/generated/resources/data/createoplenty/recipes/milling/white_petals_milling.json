@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:white_petals"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:white_dye"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:lime_dye"
+    }
+  ]
+}

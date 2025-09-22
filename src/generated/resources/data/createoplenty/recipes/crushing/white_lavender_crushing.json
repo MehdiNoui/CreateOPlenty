@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:white_lavender"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:white_dye"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:green_dye"
+    }
+  ]
+}

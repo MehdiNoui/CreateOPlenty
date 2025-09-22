@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:endbloom"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:light_gray_dye"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:orange_dye"
+    }
+  ]
+}

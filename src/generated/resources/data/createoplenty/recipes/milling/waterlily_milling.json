@@ -1,0 +1,23 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:waterlily"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 2,
+      "item": "minecraft:red_dye"
+    },
+    {
+      "chance": 0.2,
+      "item": "minecraft:lime_dye"
+    },
+    {
+      "chance": 0.1,
+      "item": "minecraft:pink_dye"
+    }
+  ]
+}

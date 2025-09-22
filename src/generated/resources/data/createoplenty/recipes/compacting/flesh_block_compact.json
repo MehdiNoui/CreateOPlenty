@@ -1,0 +1,28 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "amount": 100,
+      "fluid": "biomesoplenty:blood",
+      "nbt": {}
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "item": "biomesoplenty:flesh"
+    }
+  ]
+}

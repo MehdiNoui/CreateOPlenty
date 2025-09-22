@@ -1,0 +1,25 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:goldenrod"
+    }
+  ],
+  "processingTime": 350,
+  "results": [
+    {
+      "count": 3,
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "chance": 0.25,
+      "count": 2,
+      "item": "minecraft:yellow_dye"
+    },
+    {
+      "chance": 0.05,
+      "count": 2,
+      "item": "minecraft:lime_dye"
+    }
+  ]
+}
