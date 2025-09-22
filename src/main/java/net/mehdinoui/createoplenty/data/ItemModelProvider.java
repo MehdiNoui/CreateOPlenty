@@ -1,4 +1,4 @@
-package net.mehdinoui.createoplenty.datagen;
+package net.mehdinoui.createoplenty.data;
 
 import net.mehdinoui.createoplenty.CreateOPlenty;
 import net.mehdinoui.createoplenty.item.COPItems;
