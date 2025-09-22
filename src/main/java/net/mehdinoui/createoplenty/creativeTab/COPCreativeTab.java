@@ -18,7 +18,7 @@ public class COPCreativeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateOPlenty.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> CREATEOPLENTY_TAB = CREATIVE_MODE_TABS.register("createoplenty_tab",
-            () -> CreativeModeTab.builder().icon(()-> new ItemStack(Items.IRON_AXE))
+            () -> CreativeModeTab.builder().icon(()-> new ItemStack(COPItems.BLACK_SAND_PAPER.get()))
                     .title(Component.translatable("creativetab.createoplenty_tab"))
                     .displayItems((pParameters, pOutput) ->{
                             pOutput.accept(COPItems.BLACK_SAND_PAPER.get());
