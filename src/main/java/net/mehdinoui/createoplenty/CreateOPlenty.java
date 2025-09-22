@@ -17,12 +17,8 @@ public class CreateOPlenty
 
 {
     public static final String MOD_ID = "createoplenty";
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     public CreateOPlenty() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
 
         COPCreativeTab.register(modEventBus);
         COPItems.register(modEventBus);
