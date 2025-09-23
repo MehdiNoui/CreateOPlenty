@@ -19,7 +19,6 @@ public class COPMixingRecipes extends ProcessingRecipeGen {
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID,"thermal_calcite_from_heat"),
                 b -> b.require(Blocks.CALCITE)
-                        .duration(350)
                         .requiresHeat(HeatCondition.HEATED)
                         .output(BOPBlocks.THERMAL_CALCITE, 1)
         );
@@ -29,7 +28,6 @@ public class COPMixingRecipes extends ProcessingRecipeGen {
                 b -> b
                         .require(BOPItems.ROSE_QUARTZ_CHUNK)
                         .require(BOPItems.ROSE_QUARTZ_CHUNK)
-                        .duration(350)
                         .requiresHeat(HeatCondition.HEATED)
                         .output(BuiltInRegistries.ITEM.get(
                                 new ResourceLocation("create", "rose_quartz")

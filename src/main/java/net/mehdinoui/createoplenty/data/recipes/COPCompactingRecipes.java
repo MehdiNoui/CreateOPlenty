@@ -22,7 +22,6 @@ public class COPCompactingRecipes extends ProcessingRecipeGen {
                         .require(Items.FLINT).require(Items.FLINT)
                         .require(BOPBlocks.THERMAL_CALCITE)
                         .require(Fluids.LAVA,100)
-                        .duration(350)
                         .output(Blocks.DIORITE)
         );
         // Flesh Block
@@ -31,7 +30,6 @@ public class COPCompactingRecipes extends ProcessingRecipeGen {
                 b -> b
                         .require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH)
                         .require(BOPFluids.BLOOD, 100)
-                        .duration(350)
                         .output(BOPBlocks.FLESH)
         );
     }
