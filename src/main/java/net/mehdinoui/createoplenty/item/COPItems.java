@@ -3,24 +3,24 @@ package net.mehdinoui.createoplenty.item;
 import com.simibubi.create.content.equipment.sandPaper.SandPaperItem;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 import net.minecraft.world.item.Item;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegistryObject;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class COPItems {
     public final static DeferredRegister<Item> ITEMS =
-            DeferredRegister.create(ForgeRegistries.ITEMS, CreateOPlenty.MOD_ID);
+            DeferredRegister.create(BuiltInRegistries.ITEM, CreateOPlenty.MOD_ID);
 
-    public static final RegistryObject<Item> BLACK_SAND_PAPER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> BLACK_SAND_PAPER = ITEMS.register(
             "black_sand_paper",
             () -> new SandPaperItem(new Item.Properties())
     );
-    public static final RegistryObject<Item> ORANGE_SAND_PAPER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> ORANGE_SAND_PAPER = ITEMS.register(
             "orange_sand_paper",
             () -> new SandPaperItem(new Item.Properties())
     );
-    public static final RegistryObject<Item> WHITE_SAND_PAPER = ITEMS.register(
+    public static final DeferredHolder<Item, Item> WHITE_SAND_PAPER = ITEMS.register(
             "white_sand_paper",
             () -> new SandPaperItem(new Item.Properties())
     );

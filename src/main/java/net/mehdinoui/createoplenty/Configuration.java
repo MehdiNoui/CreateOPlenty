@@ -1,13 +1,13 @@
 package net.mehdinoui.createoplenty;
 
-import net.minecraftforge.common.ForgeConfigSpec;
+import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class Configuration {
-    public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
-    public static final ForgeConfigSpec CONFIG;
+    public static final ModConfigSpec.Builder BUILDER = new ModConfigSpec.Builder();
+    public static final ModConfigSpec CONFIG;
 
     // Configurable values
-    public static final ForgeConfigSpec.BooleanValue ENABLE_SANDPAPERS;
+    public static final ModConfigSpec.BooleanValue ENABLE_SANDPAPERS;
 
     static {
         BUILDER.push("Settings");

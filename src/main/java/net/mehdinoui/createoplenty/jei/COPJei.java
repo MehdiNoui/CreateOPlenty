@@ -10,7 +10,7 @@ import net.minecraft.world.item.ItemStack;
 
 @JeiPlugin
 public class COPJei implements IModPlugin {
-    private static final ResourceLocation ID = new ResourceLocation("createoplenty", "jei_plugin");
+    private static final ResourceLocation ID = ResourceLocation.fromNamespaceAndPath("createoplenty", "jei_plugin");
 
     @Override
     public ResourceLocation getPluginUid() {
@@ -19,10 +19,10 @@ public class COPJei implements IModPlugin {
 
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
-        // Create’s Sandpaper Polishing recipe type
+        // Create's Sandpaper Polishing recipe type
         mezz.jei.api.recipe.RecipeType<SandPaperPolishingRecipe> type =
                 new mezz.jei.api.recipe.RecipeType<>(
-                        new ResourceLocation("create", "sandpaper_polishing"),
+                        ResourceLocation.fromNamespaceAndPath("create", "sandpaper_polishing"),
                         SandPaperPolishingRecipe.class
                 );
 

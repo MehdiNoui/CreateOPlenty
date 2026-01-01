@@ -9,15 +9,15 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraftforge.eventbus.api.IEventBus;
-import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.registries.RegistryObject;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import net.neoforged.neoforge.registries.DeferredHolder;
 
 public class COPCreativeTab {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, CreateOPlenty.MOD_ID);
 
-    public static final RegistryObject<CreativeModeTab> CREATEOPLENTY_TAB = CREATIVE_MODE_TABS.register("createoplenty_tab",
+    public static final DeferredHolder<CreativeModeTab, CreativeModeTab> CREATEOPLENTY_TAB = CREATIVE_MODE_TABS.register("createoplenty_tab",
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(COPItems.BLACK_SAND_PAPER.get()))
                     .title(Component.translatable("creativetab.createoplenty_tab"))
                     .displayItems((pParameters, pOutput) ->{

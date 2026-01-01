@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:cattail"
+    }
+  ],
+  "processing_time": 50,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:brown_dye"
+    },
+    {
+      "chance": 0.2,
+      "id": "minecraft:green_dye"
+    }
+  ]
+}

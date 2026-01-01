@@ -1,0 +1,17 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:rose_quartz_chunk"
+    },
+    {
+      "item": "biomesoplenty:rose_quartz_chunk"
+    }
+  ],
+  "results": [
+    {
+      "id": "create:rose_quartz"
+    }
+  ]
+}
