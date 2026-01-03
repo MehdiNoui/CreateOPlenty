@@ -104,6 +104,13 @@ public class COPMillingRecipes extends MillingRecipeGen {
                         .output(Items.WHITE_DYE, 2)
                         .output(0.2f,Items.GREEN_DYE, 1)
         );
+        create(
+                ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "tiny_cactus_milling"),
+                b -> b.require(BOPBlocks.TINY_CACTUS)
+                        .duration(50)
+                        .output(Items.GREEN_DYE, 2)
+                        .output(0.1f,Items.GREEN_DYE, 1)
+        );
         // Tall Flowers
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "tall_white_lavender_milling"),
