@@ -6,6 +6,7 @@ import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
 import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import net.mehdinoui.createoplenty.CreateOPlenty;
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
@@ -15,6 +16,17 @@ import net.minecraft.world.level.material.Fluids;
 public class COPCompactingRecipes extends ProcessingRecipeGen {
     public COPCompactingRecipes(PackOutput output) {
         super(output);
+        // Black sand
+        create(
+                new ResourceLocation(CreateOPlenty.MOD_ID, "black_sand_to_scrochia"),
+                b -> b
+                        .require(Items.FLINT).require(Items.FLINT)
+                        .require(BOPBlocks.BLACK_SAND)
+                        .require(Fluids.LAVA,100)
+                        .output(BuiltInRegistries.BLOCK.get(
+                                new ResourceLocation("create", "scrochia")
+                        ))
+        );
         // White Sand
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID, "white_sand_to_diorite"),
