@@ -6,3 +6,5 @@
 /run-data/
 /src/test/
 /src/generated/resources/.cache/
+/runs/
+/.idea/
