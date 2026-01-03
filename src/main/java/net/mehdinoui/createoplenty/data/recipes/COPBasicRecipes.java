@@ -10,6 +10,7 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -18,7 +19,7 @@ public class COPBasicRecipes extends RecipeProvider {
         super(output, registries);
     }
     @Override
-    protected void buildRecipes(RecipeOutput output) {
+    protected void buildRecipes(@NotNull RecipeOutput output) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, COPItems.BLACK_SAND_PAPER.get())
                 .requires(Items.PAPER)
                 .requires(BOPBlocks.BLACK_SAND.asItem())
