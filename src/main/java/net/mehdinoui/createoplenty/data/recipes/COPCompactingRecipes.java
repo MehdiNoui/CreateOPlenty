@@ -2,7 +2,6 @@ package net.mehdinoui.createoplenty.data.recipes;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPFluids;
-import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.api.data.recipe.CompactingRecipeGen;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 import net.minecraft.core.HolderLookup;
