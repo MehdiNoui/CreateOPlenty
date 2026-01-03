@@ -131,6 +131,13 @@ public class COPCrushingRecipes extends ProcessingRecipeGen {
                         .output(Items.WHITE_DYE, 2)
                         .output(0.2f,Items.GREEN_DYE, 1)
         );
+        create(
+                new ResourceLocation(CreateOPlenty.MOD_ID, "tiny_cactus_crushing"),
+                b -> b.require(BOPBlocks.TINY_CACTUS)
+                        .duration(50)
+                        .output(Items.GREEN_DYE, 2)
+                        .output(0.1f,Items.GREEN_DYE, 2)
+        );
         // Tall Flowers
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID, "tall_white_lavender_crushing"),
