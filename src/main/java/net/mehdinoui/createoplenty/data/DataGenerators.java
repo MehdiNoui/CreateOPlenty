@@ -5,14 +5,14 @@ import net.mehdinoui.createoplenty.data.recipes.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
-import net.minecraftforge.common.data.ExistingFileHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
+import net.neoforged.neoforge.data.event.GatherDataEvent;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
 
 import java.util.concurrent.CompletableFuture;
 
-@Mod.EventBusSubscriber(modid = CreateOPlenty.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = CreateOPlenty.MOD_ID, bus = EventBusSubscriber.Bus.MOD)
 public class DataGenerators {
 
     @SubscribeEvent
@@ -26,18 +26,18 @@ public class DataGenerators {
                 new ItemModelProvider(packOutput, existingFileHelper));
         // Basic Recipes
         generator.addProvider(event.includeClient(),
-                new COPBasicRecipes(packOutput));
+                new COPBasicRecipes(packOutput, lookupProvider));
         // Compacting Recipes
         generator.addProvider(event.includeServer(),
-                new COPCompactingRecipes(packOutput));
+                new COPCompactingRecipes(packOutput, lookupProvider));
         // Crushing Recipes
         generator.addProvider(event.includeServer(),
-                new COPCrushingRecipes(packOutput));
+                new COPCrushingRecipes(packOutput, lookupProvider));
         // Milling Recipes
         generator.addProvider(event.includeServer(),
-                new COPMillingRecipes(packOutput));
+                new COPMillingRecipes(packOutput, lookupProvider));
         // Mixing Recipes
         generator.addProvider(event.includeServer(),
-                new COPMixingRecipes(packOutput));
+                new COPMixingRecipes(packOutput, lookupProvider));
     }
 }

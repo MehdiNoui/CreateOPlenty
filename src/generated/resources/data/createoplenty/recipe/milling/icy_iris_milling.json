@@ -1,0 +1,19 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:icy_iris"
+    }
+  ],
+  "processing_time": 50,
+  "results": [
+    {
+      "count": 2,
+      "id": "minecraft:light_blue_dye"
+    },
+    {
+      "chance": 0.2,
+      "id": "minecraft:light_blue_dye"
+    }
+  ]
+}

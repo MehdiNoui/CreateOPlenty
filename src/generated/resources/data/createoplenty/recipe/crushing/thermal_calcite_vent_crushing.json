@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "biomesoplenty:thermal_calcite_vent"
+    }
+  ],
+  "processing_time": 250,
+  "results": [
+    {
+      "chance": 0.75,
+      "id": "minecraft:bone_meal"
+    }
+  ]
+}
