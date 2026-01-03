@@ -1,0 +1,27 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 100,
+      "fluid": "biomesoplenty:blood"
+    }
+  ],
+  "results": [
+    {
+      "id": "biomesoplenty:flesh"
+    }
+  ]
+}

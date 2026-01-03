@@ -10,6 +10,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.material.FlowingFluid;
 import net.minecraft.world.level.material.Fluids;
 
 import java.util.concurrent.CompletableFuture;
@@ -27,16 +28,12 @@ public class COPCompactingRecipes extends CompactingRecipeGen {
                         .output(Blocks.DIORITE)
         );
         // Flesh Block
-        // TODO: Re-enable once BOP dependency is resolved
-        // Compacting recipe for flesh block requires blood fluid which needs BOP
-        /*
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "flesh_block_compact"),
                 b -> b
                         .require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH).require(Items.ROTTEN_FLESH)
-                        .require(BOPFluids.BLOOD, 100)
+                        .require((FlowingFluid) BOPFluids.BLOOD, 100)
                         .output(BOPBlocks.FLESH)
         );
-        */
     }
 }
