@@ -15,12 +15,12 @@ import net.minecraft.world.level.material.Fluids;
 public class COPCompactingRecipes extends ProcessingRecipeGen {
     public COPCompactingRecipes(PackOutput output) {
         super(output);
-        // Thermal Calcite
+        // White Sand
         create(
-                new ResourceLocation(CreateOPlenty.MOD_ID, "thermal_calcite_to_diorite"),
+                new ResourceLocation(CreateOPlenty.MOD_ID, "white_sand_to_diorite"),
                 b -> b
                         .require(Items.FLINT).require(Items.FLINT)
-                        .require(BOPBlocks.THERMAL_CALCITE)
+                        .require(BOPBlocks.WHITE_SAND)
                         .require(Fluids.LAVA,100)
                         .output(Blocks.DIORITE)
         );
