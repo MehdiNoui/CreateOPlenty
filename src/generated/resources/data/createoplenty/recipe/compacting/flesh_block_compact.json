@@ -14,7 +14,7 @@
       "item": "minecraft:rotten_flesh"
     },
     {
-      "type": "neoforge:single",
+      "type": "fluid_stack",
       "amount": 100,
       "fluid": "biomesoplenty:blood"
     }
