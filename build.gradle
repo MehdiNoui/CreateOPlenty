@@ -100,9 +100,9 @@ dependencies {
     implementation "net.neoforged:neoforge:${neoforge_version}"
 
     // Mod dependencies with verified IDs for NeoForge 1.21.1
-    // Create 6.0.8 for mc1.21.1 NeoForge - File ID: 7178775
-    compileOnly "curse.maven:create-328085:7178775"
-    runtimeOnly "curse.maven:create-328085:7178775"
+    // Create 6.0.6 for mc1.21.1 NeoForge - File ID: 7178775
+    compileOnly "curse.maven:create-328085:6641610"
+    runtimeOnly "curse.maven:create-328085:6641610"
     
     // Biomes O'Plenty NeoForge 1.21.1-21.1.0.13 - File ID: 7251965
     compileOnly "curse.maven:biomes-o-plenty-220318:7251965"

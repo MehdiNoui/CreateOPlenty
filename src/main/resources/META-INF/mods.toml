@@ -30,7 +30,7 @@ description='''${mod_description}'''
 [[dependencies.${mod_id}]]
 modId="create"
 mandatory=true
-versionRange="[6.0.0,)"
+versionRange="[6.0.6,)"
 ordering="NONE"
 side="BOTH"
 
@@ -38,7 +38,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="biomesoplenty"
 mandatory=true
-versionRange="[19.0.0.96,)"
+versionRange="[21.1.0.13,)"
 ordering="NONE"
 side="BOTH"
 
@@ -46,7 +46,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="glitchcore"
 mandatory=false
-versionRange="[0.0.1.1,)"
+versionRange="[2.1.0.0,)"
 ordering="NONE"
 side="BOTH"
 
@@ -54,6 +54,6 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="terrablender"
 mandatory=false
-versionRange="[3.0.1.10,)"
+versionRange="[4.1.0.8,)"
 ordering="NONE"
 side="BOTH"
