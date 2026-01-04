@@ -20,13 +20,13 @@ public class COPCompactingRecipes extends CompactingRecipeGen {
         super(output, registries, CreateOPlenty.MOD_ID);
         // Black Sand
         create(
-                ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "black_sand_to_scrochia"),
+                ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "black_sand_to_scorchia"),
                 b -> b
                         .require(Items.FLINT).require(Items.FLINT)
                         .require(BOPBlocks.BLACK_SAND)
                         .require(Fluids.LAVA,100)
                         .output(BuiltInRegistries.BLOCK.get(
-                                ResourceLocation.fromNamespaceAndPath("create", "scrochia")
+                                ResourceLocation.fromNamespaceAndPath("create", "scorchia")
                         ))
         );
         // White Sand
