@@ -13,7 +13,6 @@
     },
     {
       "chance": 0.1,
-      "count": 2,
       "item": "minecraft:green_dye"
     }
   ]
