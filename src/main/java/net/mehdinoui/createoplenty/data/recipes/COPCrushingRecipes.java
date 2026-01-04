@@ -136,7 +136,7 @@ public class COPCrushingRecipes extends ProcessingRecipeGen {
                 b -> b.require(BOPBlocks.TINY_CACTUS)
                         .duration(50)
                         .output(Items.GREEN_DYE, 2)
-                        .output(0.1f,Items.GREEN_DYE, 2)
+                        .output(0.1f,Items.GREEN_DYE, 1)
         );
         // Tall Flowers
         create(
