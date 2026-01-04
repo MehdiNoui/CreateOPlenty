@@ -23,7 +23,7 @@ public class COPCompactingRecipes extends ProcessingRecipeGen {
                         .require(Items.FLINT).require(Items.FLINT)
                         .require(BOPBlocks.BLACK_SAND)
                         .require(Fluids.LAVA,100)
-                        .output(BuiltInRegistries.BLOCK.get(
+                        .output(BuiltInRegistries.ITEM.get(
                                 new ResourceLocation("create", "scorchia")
                         ))
         );
