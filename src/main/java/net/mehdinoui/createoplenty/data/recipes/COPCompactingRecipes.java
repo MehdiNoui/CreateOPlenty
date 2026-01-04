@@ -18,13 +18,13 @@ public class COPCompactingRecipes extends ProcessingRecipeGen {
         super(output);
         // Black sand
         create(
-                new ResourceLocation(CreateOPlenty.MOD_ID, "black_sand_to_scrochia"),
+                new ResourceLocation(CreateOPlenty.MOD_ID, "black_sand_to_scorchia"),
                 b -> b
                         .require(Items.FLINT).require(Items.FLINT)
                         .require(BOPBlocks.BLACK_SAND)
                         .require(Fluids.LAVA,100)
                         .output(BuiltInRegistries.BLOCK.get(
-                                new ResourceLocation("create", "scrochia")
+                                new ResourceLocation("create", "scorchia")
                         ))
         );
         // White Sand
