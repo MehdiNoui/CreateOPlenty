@@ -1,9 +1,8 @@
 package net.mehdinoui.createoplenty.data.recipes;
 
 import biomesoplenty.api.item.BOPItems;
-import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
+import com.simibubi.create.api.data.recipe.CrushingRecipeGen;
 import com.simibubi.create.AllRecipeTypes;
-import net.mehdinoui.createoplenty.Configuration;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -11,9 +10,11 @@ import net.minecraft.world.item.Items;
 import biomesoplenty.api.block.BOPBlocks;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 
-public class COPCrushingRecipes extends ProcessingRecipeGen {
+import java.util.concurrent.CompletableFuture;
+
+public class COPCrushingRecipes extends CrushingRecipeGen {
     public COPCrushingRecipes(PackOutput output) {
-        super(output);
+        super(output, CreateOPlenty.MOD_ID);
         // Sandstone -> sand
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID, "black_sandstone_crushing"),
@@ -163,9 +164,5 @@ public class COPCrushingRecipes extends ProcessingRecipeGen {
                         .output(0.25f,Items.YELLOW_DYE, 2)
                         .output(0.05f,Items.LIME_DYE, 2)
         );
-    }
-    @Override
-    protected AllRecipeTypes getRecipeType() {
-        return AllRecipeTypes.CRUSHING;
     }
 }

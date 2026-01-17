@@ -3,8 +3,7 @@ package net.mehdinoui.createoplenty.data.recipes;
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.block.BOPFluids;
 import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
+import com.simibubi.create.api.data.recipe.CompactingRecipeGen;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
@@ -13,9 +12,9 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.material.Fluids;
 
-public class COPCompactingRecipes extends ProcessingRecipeGen {
+public class COPCompactingRecipes extends CompactingRecipeGen {
     public COPCompactingRecipes(PackOutput output) {
-        super(output);
+        super(output, CreateOPlenty.MOD_ID);
         // Black sand
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID, "black_sand_to_scorchia"),
@@ -44,9 +43,5 @@ public class COPCompactingRecipes extends ProcessingRecipeGen {
                         .require(BOPFluids.BLOOD, 100)
                         .output(BOPBlocks.FLESH)
         );
-    }
-    @Override
-    protected AllRecipeTypes getRecipeType() {
-        return AllRecipeTypes.COMPACTING;
     }
 }

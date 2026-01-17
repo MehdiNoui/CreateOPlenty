@@ -1,12 +1,7 @@
 package net.mehdinoui.createoplenty.data.recipes;
 
 import biomesoplenty.api.block.BOPBlocks;
-import biomesoplenty.api.item.BOPItems;
-import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
-import com.simibubi.create.foundation.recipe.IRecipeTypeInfo;
 import net.mehdinoui.createoplenty.item.COPItems;
-import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;

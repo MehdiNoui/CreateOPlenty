@@ -2,15 +2,15 @@ package net.mehdinoui.createoplenty.data.recipes;
 
 import biomesoplenty.api.block.BOPBlocks;
 import com.simibubi.create.AllRecipeTypes;
-import com.simibubi.create.foundation.data.recipe.ProcessingRecipeGen;
+import com.simibubi.create.api.data.recipe.MillingRecipeGen;
 import net.mehdinoui.createoplenty.CreateOPlenty;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 
-public class COPMillingRecipes extends ProcessingRecipeGen {
+public class COPMillingRecipes extends MillingRecipeGen {
     public COPMillingRecipes(PackOutput output) {
-        super(output);
+        super(output, CreateOPlenty.MOD_ID);
         // Sandstone -> sand
         create(
                 new ResourceLocation(CreateOPlenty.MOD_ID, "black_sandstone_milling"),
