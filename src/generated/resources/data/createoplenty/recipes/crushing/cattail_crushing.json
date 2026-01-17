@@ -8,11 +8,16 @@
   "processingTime": 50,
   "results": [
     {
+      "count": 3,
+      "item": "minecraft:brown_dye"
+    },
+    {
+      "chance": 0.25,
       "count": 2,
       "item": "minecraft:brown_dye"
     },
     {
-      "chance": 0.2,
+      "chance": 0.05,
       "item": "minecraft:green_dye"
     }
   ]

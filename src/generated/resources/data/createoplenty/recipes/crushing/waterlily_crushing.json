@@ -12,11 +12,7 @@
       "item": "minecraft:red_dye"
     },
     {
-      "chance": 0.2,
-      "item": "minecraft:lime_dye"
-    },
-    {
-      "chance": 0.1,
+      "chance": 0.05,
       "item": "minecraft:pink_dye"
     }
   ]

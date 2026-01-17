@@ -10,10 +10,6 @@
     {
       "count": 2,
       "item": "minecraft:white_dye"
-    },
-    {
-      "chance": 0.2,
-      "item": "minecraft:lime_dye"
     }
   ]
 }

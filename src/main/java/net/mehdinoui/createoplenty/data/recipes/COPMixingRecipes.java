@@ -2,7 +2,6 @@ package net.mehdinoui.createoplenty.data.recipes;
 
 import biomesoplenty.api.block.BOPBlocks;
 import biomesoplenty.api.item.BOPItems;
-import com.simibubi.create.AllRecipeTypes;
 import com.simibubi.create.api.data.recipe.MixingRecipeGen;
 import com.simibubi.create.content.processing.recipe.HeatCondition;
 import net.mehdinoui.createoplenty.CreateOPlenty;
