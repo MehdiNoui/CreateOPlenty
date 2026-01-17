@@ -57,13 +57,6 @@ public class COPCrushingRecipes extends CrushingRecipeGen {
                         .output(BOPItems.ROSE_QUARTZ_CHUNK, 3)
                         .output(0.5f,BOPItems.ROSE_QUARTZ_CHUNK,1)
         );
-        create(
-                ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "rose_quartz_cluster_crushing"),
-                b -> b.require(BOPBlocks.ROSE_QUARTZ_CLUSTER)
-                        .duration(150)
-                        .output(BOPItems.ROSE_QUARTZ_CHUNK, 7)
-                        .output(0.5f,BOPItems.ROSE_QUARTZ_CHUNK,1)
-        );
         // Thermal Calcite
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "thermal_calcite_crushing"),
@@ -94,50 +87,42 @@ public class COPCrushingRecipes extends CrushingRecipeGen {
                 b -> b.require(BOPBlocks.WHITE_PETALS)
                         .duration(50)
                         .output(Items.WHITE_DYE, 2)
-                        .output(0.2f,Items.LIME_DYE, 1)
         );
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "icy_iris_crushing"),
                 b -> b.require(BOPBlocks.ICY_IRIS)
                         .duration(50)
-                        .output(Items.LIGHT_BLUE_DYE, 2)
-                        .output(0.2f,Items.LIGHT_BLUE_DYE, 1)
+                        .output(Items.LIGHT_BLUE_DYE, 3)
+                        .output(0.25f,Items.LIGHT_BLUE_DYE, 2)
+                        .output(0.05f,Items.LIGHT_GRAY_DYE, 2)
         );
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "end_bloom_crushing"),
                 b -> b.require(BOPBlocks.ENDBLOOM)
                         .duration(50)
                         .output(Items.LIGHT_GRAY_DYE, 2)
-                        .output(0.1f,Items.ORANGE_DYE, 1)
         );
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "waterlily_crushing"),
                 b -> b.require(BOPBlocks.WATERLILY)
                         .duration(50)
                         .output(Items.RED_DYE, 2)
-                        .output(0.2f,Items.LIME_DYE, 1)
-                        .output(0.1F,Items.PINK_DYE, 1)
+                        .output(0.05F,Items.PINK_DYE, 1)
         );
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "cattail_crushing"),
                 b -> b.require(BOPBlocks.CATTAIL)
                         .duration(50)
-                        .output(Items.BROWN_DYE, 2)
-                        .output(0.2f,Items.GREEN_DYE, 1)
+                        .output(Items.BROWN_DYE, 3)
+                        .output(0.25f,Items.BROWN_DYE, 2)
+                        .output(0.05f,Items.GREEN_DYE, 1)
         );
         create(
                 ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "white_lavender_crushing"),
                 b -> b.require(BOPBlocks.WHITE_LAVENDER)
                         .duration(50)
                         .output(Items.WHITE_DYE, 2)
-                        .output(0.2f,Items.GREEN_DYE, 1)
-        );
-        create(
-                ResourceLocation.fromNamespaceAndPath(CreateOPlenty.MOD_ID, "tiny_cactus_crushing"),
-                b -> b.require(BOPBlocks.TINY_CACTUS)
-                        .duration(50)
-                        .output(Items.GREEN_DYE, 2)
-                        .output(0.1f,Items.GREEN_DYE, 1)
+                        .output(0.05f,Items.GREEN_DYE, 1)
         );
 
         // Tall Flowers
@@ -146,7 +131,7 @@ public class COPCrushingRecipes extends CrushingRecipeGen {
                 b -> b.require(BOPBlocks.TALL_WHITE_LAVENDER)
                         .duration(100)
                         .output(Items.WHITE_DYE, 3)
-                        .output(0.25f,Items.WHITE_DYE, 2)
+                        .output(0.25f,Items.LIGHT_BLUE_DYE, 2)
                         .output(0.05f,Items.GREEN_DYE, 2)
         );
         create(
@@ -162,8 +147,8 @@ public class COPCrushingRecipes extends CrushingRecipeGen {
                 b -> b.require(BOPBlocks.GOLDENROD)
                         .duration(100)
                         .output(Items.YELLOW_DYE, 3)
-                        .output(0.25f,Items.YELLOW_DYE, 2)
-                        .output(0.05f,Items.LIME_DYE, 2)
+                        .output(0.25f,Items.GREEN_DYE, 2)
+                        .output(0.05f,Items.YELLOW_DYE, 2)
         );
     }
 }

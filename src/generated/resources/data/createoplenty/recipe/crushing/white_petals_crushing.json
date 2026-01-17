@@ -10,10 +10,6 @@
     {
       "count": 2,
       "id": "minecraft:white_dye"
-    },
-    {
-      "chance": 0.2,
-      "id": "minecraft:lime_dye"
     }
   ]
 }
