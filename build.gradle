@@ -10,7 +10,7 @@ version = mod_version
 group = mod_group_id
 
 base {
-    archivesName = "CreateOPlenty-Create+6.0.7"
+    archivesName = "COP-Create+6.0.7"
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
