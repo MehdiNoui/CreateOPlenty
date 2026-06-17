@@ -38,7 +38,7 @@ side="BOTH"
 [[dependencies.${mod_id}]]
 modId="biomesoplenty"
 mandatory=true
-versionRange="[19.0.0.96,)"
+versionRange="[18.0.0.592,)"
 ordering="NONE"
 side="BOTH"
 
